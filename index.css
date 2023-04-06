@@ -1,0 +1,18 @@
+body{
+    background: #1a2131;
+
+}
+*{
+    color: #fff;
+}
+#Update{
+    display: none;
+}
+h1{
+    margin-left: 550px;
+    color: #fff;
+}
+h3{
+    color:#fff;
+    margin-left: 60px;
+}
