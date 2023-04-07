@@ -10,30 +10,19 @@
     <title>Employee Crud Operation</title>
 </head>
 <body>
-    <h1>Employee Management System</h1><br>
-    <h3>Employee List:</h3><br>
-   <div class="m-5">
-    
-    <div class="form-group col-md-6 mb-3">
-      <label for="name">Employee Name:</label>
-    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Employee Name">
+  <nav class="navbar navbar-dark bg-mynav">
+<div class="container-fluid">
+  <marquee class="marq">EMPLOYEE<span style="color:#ce203d;"> MANAGEMENT </span>SYSTEM</marquee>
+</div>
+  </nav>
+ 
+    <div class="col-12 col-md-19 mt-4" style="margin-left: 1350px;">
+      
+      <a href="add.html" class="btn btn-success add-btn" type="submit">Add Employee</a>
+      
     </div>
-    <div class="form-group col-md-6 mb-3">
-      <label for="Eid">Employee ID:</label>
-    <input type="number" name="Eid" class="form-control" id="Eid" placeholder="Enter Employee ID">
-    </div>
-    <div class="form-group col-md-6 mb-3">
-      <label for="date">Date:</label>
-    <input type="date" name="date" class="form-control" id="date" placeholder="Enter Date">
-    </div>
-    <div class="col-lg-12 mt-5">
-      <button class="btn btn-success" id="submit" onclick="addData()">Add Data</button>
-      <button class="btn btn-primary" id="Update">Update</button>
-    </div>
-    </div>
-
 <div class="row mt-5">
-  <div class="col-12">
+  <div class="col-10 col-md-10" style="margin-left: 150px;">
     <table class="table table-bordered" id="crudTable">
         <thead>
           <tr>
@@ -50,8 +39,9 @@
           <td>{date}</td>
           
           <td>
+            <button onclick="updateData()" class="btn btn-warning">Edit</button>
             <button onclick="deleteData()"class="btn btn-danger">Delete</button>
-            <button onclick="updateData()" class="btn btn-warning">Update</button>
+            
           </td>
         </tbody>
     </table>
